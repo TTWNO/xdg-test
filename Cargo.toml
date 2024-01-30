@@ -1,0 +1,10 @@
+[package]
+name = "test-xdg"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ashpd = { git = "https://github.com/bilelmoussaoui/ashpd/", branch = "master", default-features = false, features = ["tokio"] }
+tokio = { version = "1.35.1", default-features = false, features = ["macros"] }
